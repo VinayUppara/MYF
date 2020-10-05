@@ -34,7 +34,7 @@ public class test1 {
 		driver.findElement(By.cssSelector("[type='password']")).sendKeys("vxcvd");
 		driver.findElement(By.cssSelector("[type='password']")).sendKeys(Keys.ENTER);
 		Thread.sleep(5000);
-		String url=driver.getCurrentUrl();
+		String url=driver.getCurre	ntUrl();
 		System.out.println(url);
 		String partialcode=url.split("code=")[1];
 		String code=partialcode.split("&scope")[0];
@@ -68,6 +68,7 @@ public class test1 {
            .get("https://rahulshettyacademy.com/getCourse.php")
 		.asString();
 		System.out.println(r2);
+		System.out.println(accessToken);
 
 	
 	
